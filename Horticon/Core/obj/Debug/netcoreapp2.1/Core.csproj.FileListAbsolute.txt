@@ -6,3 +6,4 @@ C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Debug\netcoreapp2.1\
 C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfo.cs
 C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Debug\netcoreapp2.1\Core.dll
 C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Debug\netcoreapp2.1\Core.pdb
+C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Debug\netcoreapp2.1\Core.csprojAssemblyReference.cache

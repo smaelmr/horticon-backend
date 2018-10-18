@@ -1,24 +1,24 @@
-﻿using System;
+﻿using Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Core.Entities.Plantations
 {
-    public class Planting
+    public class Planting : BaseEntity
     {
         #region Properties
 
-        public int System { get; set; }
-        public int Lot { get; set; }
+        public int Quantity { get; set; }
 
-        public int Quantidade { get; set; }
+        public SeedType Type { get; set; }
+        public SeedVariety Variety { get; set; }
+        public SeedBrand Brand { get; set; }
 
-        //tipo : (sub cadastro)
-        //nome : (sub cadastro)
-        //marca : (sub cadastro)
 
-        
 
         #endregion
+
+        public Planting() { }
     }
 }

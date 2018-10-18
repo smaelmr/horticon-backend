@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Core.Enums
 {
-    public enum Brand
+    public enum SeedBrand
     {
-
+        Tecnoseed,
+        Blueseed,
+        Feltrin
     }
 }

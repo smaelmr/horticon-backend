@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core.Contracts.Repositories
 {
-    public interface IBaseRepository<T> where T : BaseEntity
+    public interface IBaseRepository<T> where T : class
     {
         void Insert(T obj);
 

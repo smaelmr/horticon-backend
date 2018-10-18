@@ -2506,6 +2506,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "FluentValidation.AspNetCore": "8.0.100"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
       }
     }
   },
@@ -7617,10 +7630,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Core >= 1.0.0",
       "FluentValidation.AspNetCore >= 8.0.100",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -7654,7 +7673,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

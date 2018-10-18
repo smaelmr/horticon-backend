@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Core.Contracts.Services
 {
-    public interface IBaseService<T> where T : BaseEntity
+    public interface IBaseService<T> where T : class
     {
         T Post<V>(T obj) where V : AbstractValidator<T>;
 

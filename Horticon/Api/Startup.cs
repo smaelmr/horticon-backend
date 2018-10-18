@@ -49,12 +49,12 @@ namespace Api
 
             // # Depedency Injection
             services.AddTransient<MySqlContext, MySqlContext>();
-            // services.AddTransient<, >();
+                
 
             // # Start cnofig mysql
-            var connection = Configuration["ConexaoMySql:MySqlConnectionString"];
+            var connection = Configuration["ConectionMySql:MySqlConnectionString"];
 
-            services.AddDbContext<MySqlContext>(options => options.UseMySql(connection));
+            services.AddDbContext<MySqlContext>(options => options.UseMySql("server=mysql.horticon.com.br;user id=horticon;password=homhorticon2018;persistsecurityinfo=True; database=horticon"));
 
             // # Start config jwt
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

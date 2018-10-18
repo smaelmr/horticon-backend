@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Data.Repository
 {
-    public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
+    public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         private MySqlContext context;
 
