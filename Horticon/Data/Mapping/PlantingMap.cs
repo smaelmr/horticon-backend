@@ -30,7 +30,7 @@ namespace Data.Mapping
 
             builder.Property(c => c.Variety)
                 .IsRequired()
-                .HasColumnName("SeedName");
+                .HasColumnName("SeedVariety");
 
             builder.Property(c => c.Type)
                 .IsRequired()

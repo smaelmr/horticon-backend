@@ -13,6 +13,10 @@ namespace Core.Entities.Pesticides
         public string ActivePrinciple { get; set; }
         public string DoseL { get; set; }
         public string Lack { get; set; } //carencia
-        
+
+        public Pesticide()
+        {
+
+        }
     }
 }

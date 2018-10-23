@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Service/1.0.0": {
         "dependencies": {
+          "Core": "1.0.0",
           "FluentValidation.AspNetCore": "8.0.100"
         },
         "runtime": {
@@ -1726,6 +1727,14 @@
           "System.Xml.XDocument": "4.3.0",
           "System.Xml.XPath": "4.3.0"
         }
+      },
+      "Core/1.0.0": {
+        "dependencies": {
+          "FluentValidation.AspNetCore": "8.0.100"
+        },
+        "runtime": {
+          "Core.dll": {}
+        }
       }
     }
   },
@@ -2819,6 +2828,11 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

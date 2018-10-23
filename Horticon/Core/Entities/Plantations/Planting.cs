@@ -16,7 +16,6 @@ namespace Core.Entities.Plantations
         public SeedBrand Brand { get; set; }
 
 
-
         #endregion
 
         public Planting() { }
