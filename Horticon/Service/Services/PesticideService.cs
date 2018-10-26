@@ -1,15 +1,16 @@
 ﻿using Core.Contracts.Repositories;
 using Core.Contracts.Services;
-using Core.Entities.Plantations;
+using Core.Entities.Pesticides;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Service.Services
 {
-    public class PlantingService : BaseService<Planting>, IPlantingService
+    public class PesticideService : BaseService<Pesticide>, IPesticideService
     {
-        public PlantingService(IPlantingRepository repository)
+
+        public PesticideService(IPesticideRepository repository)
             : base(repository)
         {
 

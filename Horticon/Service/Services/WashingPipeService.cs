@@ -1,15 +1,16 @@
 ﻿using Core.Contracts.Repositories;
 using Core.Contracts.Services;
-using Core.Entities.Plantations;
+using Core.Entities.WashingPipes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Service.Services
 {
-    public class PlantingService : BaseService<Planting>, IPlantingService
+    public class WashingPipeService : BaseService<WashingPipe>, IWashingPipeService
     {
-        public PlantingService(IPlantingRepository repository)
+
+        public WashingPipeService(IWashingPipeRepository repository)
             : base(repository)
         {
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using FluentValidation;
 using Core.Contracts.Repositories;
 
-namespace Service.Serices
+namespace Service.Services
 {
     public class BaseService<T> : IBaseService<T> where T : class
     {
