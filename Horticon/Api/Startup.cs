@@ -5,8 +5,11 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Contracts.Repositories;
+using Core.Contracts.Services;
 using Core.Entities.Users;
 using Data.Context;
+using Data.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -20,6 +23,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Service.Services;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Api
@@ -49,7 +53,8 @@ namespace Api
 
             // # Depedency Injection
             services.AddTransient<MySqlContext, MySqlContext>();
-                
+            services.AddTransient<IPesticideService, PesticideService>();
+            services.AddTransient<IPesticideRepository, PesticideRepository>();
 
             // # Start cnofig mysql
             var connection = Configuration["ConectionMySql:MySqlConnectionString"];
@@ -95,6 +100,18 @@ namespace Api
                 });
 
 
+                c.AddSecurityDefinition("Bearer", new ApiKeyScheme()
+                {
+                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+                    Name = "Authorization",
+                    In = "header",
+                    Type = "apiKey"
+                });
+                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
+                {
+                    { "Bearer", new string[] { } }
+                });
+
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
@@ -108,25 +125,31 @@ namespace Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseAuthentication();
+
             if (env.IsDevelopment())
+            {
                 app.UseDeveloperExceptionPage();
+
+                // Enable middleware to serve generated Swagger as a JSON endpoint.
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Horticon V1");
+                    c.RoutePrefix = string.Empty;
+
+                });
+            }
             else
                 app.UseHsts();
 
-            app.UseAuthentication();
-
-            app.UseSwagger();
-
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
-            // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Horticon V1");
-                c.RoutePrefix = string.Empty;
-            });
-
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

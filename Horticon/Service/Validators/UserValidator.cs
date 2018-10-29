@@ -15,7 +15,7 @@ namespace Service.Validators
                     .NotNull()
                     .OnAnyFailure(x =>
                     {
-                        throw new ArgumentNullException("Can't found the object.");
+                        throw new ArgumentNullException("Objeto não encontrado.");
                     });
 
             RuleFor(c => c.Name)

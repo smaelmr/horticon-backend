@@ -4820,6 +4820,20 @@
         "runtime": {
           "bin/placeholder/Data.dll": {}
         }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Core": "1.0.0",
+          "FluentValidation.AspNetCore": "8.0.100"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
       }
     }
   },
@@ -12686,6 +12700,11 @@
       "type": "project",
       "path": "../Data/Data.csproj",
       "msbuildProject": "../Data/Data.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12698,6 +12717,7 @@
       "Microsoft.EntityFrameworkCore.Relational >= 2.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 3.0.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 3.0.0"
     ]
@@ -12737,6 +12757,9 @@
             },
             "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Data\\Data.csproj": {
               "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Data\\Data.csproj"
+            },
+            "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Service\\Service.csproj"
             }
           }
         }

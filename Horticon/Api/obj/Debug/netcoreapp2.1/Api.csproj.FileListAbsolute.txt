@@ -18,3 +18,5 @@ C:\Users\smael\Workspace\horticon-backend\Horticon\Api\bin\Debug\netcoreapp2.1\C
 C:\Users\smael\Workspace\horticon-backend\Horticon\Api\obj\Debug\netcoreapp2.1\Api.csproj.CopyComplete
 C:\Users\smael\Workspace\horticon-backend\Horticon\Api\bin\Debug\netcoreapp2.1\Data.dll
 C:\Users\smael\Workspace\horticon-backend\Horticon\Api\bin\Debug\netcoreapp2.1\Data.pdb
+C:\Users\smael\Workspace\horticon-backend\Horticon\Api\bin\Debug\netcoreapp2.1\Service.dll
+C:\Users\smael\Workspace\horticon-backend\Horticon\Api\bin\Debug\netcoreapp2.1\Service.pdb

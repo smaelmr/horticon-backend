@@ -25,7 +25,7 @@ namespace Api.Controllers
         [AllowAnonymous]
         public IActionResult Login([FromBody] AuthenticateUserCommand command)
         {
-            if (command.Username == "DotNetCoreServer" && command.Password == "1234")
+            if (command.Username == "smael" && command.Password == "1234")
             {
                 var claims = new[]
                 {

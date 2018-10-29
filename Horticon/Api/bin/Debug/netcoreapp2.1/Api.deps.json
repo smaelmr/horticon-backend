@@ -32,6 +32,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "2.1.4",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.1",
+          "Service": "1.0.0",
           "Swashbuckle.AspNetCore": "3.0.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "3.0.0"
         },
@@ -843,6 +844,18 @@
         },
         "compile": {
           "Data.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "FluentValidation.AspNetCore": "8.0.100"
+        },
+        "runtime": {
+          "Service.dll": {}
+        },
+        "compile": {
+          "Service.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -4051,6 +4064,11 @@
       "sha512": ""
     },
     "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
