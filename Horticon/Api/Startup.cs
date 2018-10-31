@@ -53,8 +53,28 @@ namespace Api
 
             // # Depedency Injection
             services.AddTransient<MySqlContext, MySqlContext>();
+
+            services.AddTransient<ICycleService, CycleService>();
+            services.AddTransient<ICycleRepository, CycleRepository>();
+
             services.AddTransient<IPesticideService, PesticideService>();
             services.AddTransient<IPesticideRepository, PesticideRepository>();
+
+            services.AddTransient<IPlantingService, PlantingService>();
+            services.AddTransient<IPlantingRepository, PlantingRepository>();
+
+            services.AddTransient<IWashingPipeService, WashingPipeService>();
+            services.AddTransient<IWashingPipeRepository, WashingPipeRepository>();
+
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IUserRepository, UserRepository>();
+
+            services.AddTransient<IWaterControlService, WaterControlService>();
+            services.AddTransient<IWaterControlRepository, WaterControlRepository>();
+
+            services.AddTransient<IWaterChangeService, WaterChangeService>();
+            services.AddTransient<IWaterChangeRepository, WaterChangeRepository>();
+
 
             // # Start cnofig mysql
             var connection = Configuration["ConectionMySql:MySqlConnectionString"];

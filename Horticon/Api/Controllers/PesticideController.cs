@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Commands;
 using Core.Contracts.Services;
 using Core.Entities.Pesticides;
 using Microsoft.AspNetCore.Authorization;
@@ -43,7 +44,7 @@ namespace Api.Controllers
 
         // POST: api/Pesticide
         [HttpPost]
-        public void Post([FromBody] Pesticide value)
+        public void Post([FromBody] PesticidePostCommand value)
         {
             var pesticide = service.Post<PesticideValidator>(value);
         }
