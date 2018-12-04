@@ -1,0 +1,9 @@
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\bin\Debug\netcoreapp2.1\Horticon.Core.deps.json
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\bin\Debug\netcoreapp2.1\Horticon.Core.dll
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\obj\Debug\netcoreapp2.1\Horticon.Core.csproj.CoreCompileInputs.cache
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\obj\Debug\netcoreapp2.1\Horticon.Core.AssemblyInfoInputs.cache
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\obj\Debug\netcoreapp2.1\Horticon.Core.AssemblyInfo.cs
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\bin\Debug\netcoreapp2.1\Horticon.Core.pdb
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\obj\Debug\netcoreapp2.1\Horticon.Core.dll
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\obj\Debug\netcoreapp2.1\Horticon.Core.pdb
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Core\obj\Debug\netcoreapp2.1\Horticon.Core.csprojAssemblyReference.cache

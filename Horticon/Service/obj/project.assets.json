@@ -2507,17 +2507,17 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Core/1.0.0": {
+      "Horticon.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "FluentValidation.AspNetCore": "8.0.100"
+          "FluentValidation.AspNetCore": "8.0.101"
         },
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Horticon.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Horticon.Core.dll": {}
         }
       }
     }
@@ -7631,22 +7631,22 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Core/1.0.0": {
+    "Horticon.Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../Horticon.Core/Horticon.Core.csproj",
+      "msbuildProject": "../Horticon.Core/Horticon.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Core >= 1.0.0",
       "FluentValidation.AspNetCore >= 8.0.100",
+      "Horticon.Core >= 1.0.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\smael\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7658,7 +7658,7 @@
       "outputPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\smael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7674,8 +7674,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\Core.csproj"
+            "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Horticon.Core\\Horticon.Core.csproj": {
+              "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Horticon.Core\\Horticon.Core.csproj"
             }
           }
         }
@@ -7707,5 +7707,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: FluentValidation.AspNetCore from 8.0.101 to 8.0.100. Reference the package directly from the project to select a different version. \r\n Service -> Horticon.Core -> FluentValidation.AspNetCore (>= 8.0.101) \r\n Service -> FluentValidation.AspNetCore (>= 8.0.100)",
+      "libraryId": "FluentValidation.AspNetCore",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

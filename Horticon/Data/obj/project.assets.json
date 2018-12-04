@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "FluentValidation/8.0.100": {
+      "FluentValidation/8.0.101": {
         "type": "package",
         "dependencies": {
           "System.Collections.Concurrent": "4.3.0",
@@ -17,10 +17,10 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
-      "FluentValidation.AspNetCore/8.0.100": {
+      "FluentValidation.AspNetCore/8.0.101": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "8.0.100",
+          "FluentValidation": "8.0.101",
           "Microsoft.AspNetCore.Mvc": "2.1.0"
         },
         "compile": {
@@ -2742,29 +2742,29 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Core/1.0.0": {
+      "Horticon.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "FluentValidation.AspNetCore": "8.0.100"
+          "FluentValidation.AspNetCore": "8.0.101"
         },
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Horticon.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Horticon.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "FluentValidation/8.0.100": {
-      "sha512": "kGyYfxWWsLawTXnPrZ6l82Mqe7n3gHoFDqPalrCzpsqzDP6Jthx8gnMvSrcsaDeeEpR6i6SRsWdX4NxQtIKd+Q==",
+    "FluentValidation/8.0.101": {
+      "sha512": "r7GADkwShbQsGyLDYsMZQx2KS5e79qLkQ4VfbCnjcpAjI8LujP73sx8FITD5gV49QsKJ5ME0D4M4i0mcyVS9nw==",
       "type": "package",
-      "path": "fluentvalidation/8.0.100",
+      "path": "fluentvalidation/8.0.101",
       "files": [
         ".signature.p7s",
-        "fluentvalidation.8.0.100.nupkg.sha512",
+        "fluentvalidation.8.0.101.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net45/FluentValidation.dll",
         "lib/net45/FluentValidation.xml",
@@ -2776,13 +2776,13 @@
         "lib/netstandard2.0/FluentValidation.xml"
       ]
     },
-    "FluentValidation.AspNetCore/8.0.100": {
-      "sha512": "VpzvmVZbmcDVomIsf8OhOR+CHKOUUk5q0nZo+dQjKfJeoIhMMDmQvf8pD9eKCy67JsfXZWhGBWWuRlULl60d2Q==",
+    "FluentValidation.AspNetCore/8.0.101": {
+      "sha512": "n8qutaka9IKkwr/SdehKvR1aoyMhcTNkz0BjFqADm5/8YOM3Zm1tp1zGZgS7LwPABTy0jn3MNu2m96SolmjonA==",
       "type": "package",
-      "path": "fluentvalidation.aspnetcore/8.0.100",
+      "path": "fluentvalidation.aspnetcore/8.0.101",
       "files": [
         ".signature.p7s",
-        "fluentvalidation.aspnetcore.8.0.100.nupkg.sha512",
+        "fluentvalidation.aspnetcore.8.0.101.nupkg.sha512",
         "fluentvalidation.aspnetcore.nuspec",
         "lib/netstandard2.0/FluentValidation.AspNetCore.dll",
         "lib/netstandard2.0/FluentValidation.AspNetCore.xml"
@@ -8146,15 +8146,15 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Core/1.0.0": {
+    "Horticon.Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../Horticon.Core/Horticon.Core.csproj",
+      "msbuildProject": "../Horticon.Core/Horticon.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Core >= 1.0.0",
+      "Horticon.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
       "Pomelo.EntityFrameworkCore.MySql >= 2.1.2",
@@ -8163,7 +8163,7 @@
   },
   "packageFolders": {
     "C:\\Users\\smael\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8175,7 +8175,7 @@
       "outputPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\smael\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8191,8 +8191,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\Core.csproj"
+            "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Horticon.Core\\Horticon.Core.csproj": {
+              "projectPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Horticon.Core\\Horticon.Core.csproj"
             }
           }
         }

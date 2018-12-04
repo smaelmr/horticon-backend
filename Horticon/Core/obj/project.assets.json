@@ -7627,7 +7627,7 @@
   },
   "packageFolders": {
     "C:\\Users\\smael\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -7639,7 +7639,7 @@
       "outputPath": "C:\\Users\\smael\\Workspace\\horticon-backend\\Horticon\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\smael\\AppData\\Roaming\\NuGet\\NuGet.Config",
