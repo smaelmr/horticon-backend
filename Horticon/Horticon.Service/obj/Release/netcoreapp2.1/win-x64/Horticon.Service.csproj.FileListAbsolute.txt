@@ -1,0 +1,12 @@
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\bin\Release\netcoreapp2.1\win-x64\Horticon.Service.deps.json
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\bin\Release\netcoreapp2.1\win-x64\Horticon.Service.dll
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\bin\Release\netcoreapp2.1\win-x64\Horticon.Service.pdb
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\bin\Release\netcoreapp2.1\win-x64\Horticon.Core.dll
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\bin\Release\netcoreapp2.1\win-x64\Horticon.Core.pdb
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.csprojAssemblyReference.cache
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.csproj.CoreCompileInputs.cache
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.AssemblyInfoInputs.cache
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.AssemblyInfo.cs
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.csproj.CopyComplete
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.dll
+C:\Users\smael\Workspace\horticon-backend\Horticon\Horticon.Service\obj\Release\netcoreapp2.1\win-x64\Horticon.Service.pdb

@@ -22,6 +22,7 @@ using Data.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 
 namespace Api
 {
@@ -36,10 +37,18 @@ namespace Api
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddCors();
+        { 
+            services.AddCors(); 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc();  
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins("http://app.horticon.com.br"));
+            });
+
+            services.AddMvc().  SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // # Depedency Injection
             services.AddTransient<MySqlContext, MySqlContext>();
@@ -153,6 +162,15 @@ namespace Api
                 app.UseHsts();
 
             app.UseHttpsRedirection();
+            
+
+            // Shows UseCors with named policy.
+            app.UseCors("AllowSpecificOrigin");
+            app.UseCors(option =>option.AllowAnyOrigin());  
+            app.UseCors(option => option.AllowAnyMethod());
+            app.UseCors(option => option.AllowAnyHeader()); 
+            app.UseCors(option => option.AllowCredentials());  
+
             app.UseMvc();
 
             app.UseMvc(routes =>
