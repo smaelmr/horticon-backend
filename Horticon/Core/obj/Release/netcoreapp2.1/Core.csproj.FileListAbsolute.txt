@@ -1,9 +1,0 @@
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\bin\Release\netcoreapp2.1\Core.deps.json
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\bin\Release\netcoreapp2.1\Core.dll
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\bin\Release\netcoreapp2.1\Core.pdb
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Release\netcoreapp2.1\Core.csprojAssemblyReference.cache
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Release\netcoreapp2.1\Core.csproj.CoreCompileInputs.cache
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Release\netcoreapp2.1\Core.AssemblyInfoInputs.cache
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Release\netcoreapp2.1\Core.AssemblyInfo.cs
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Release\netcoreapp2.1\Core.dll
-C:\Users\smael\Workspace\horticon-backend\Horticon\Core\obj\Release\netcoreapp2.1\Core.pdb
